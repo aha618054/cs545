@@ -1,4 +1,4 @@
-package com.example.cs545;
+package com.example.cs545.Lab1;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
