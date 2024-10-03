@@ -1,0 +1,18 @@
+package com.example.cs545.Lab3.Q4_uni_OneToMany;
+
+import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//@Entity
+public class Customer {
+    @Id
+    private int id;
+    private String name;
+    private String address;
+
+    @OneToMany
+    @JoinColumn(name = "customer_id")
+    private List<Reservation> reservations = new ArrayList<>();
+}
