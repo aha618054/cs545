@@ -2,7 +2,7 @@ package com.example.cs545.Lab3.Q6_bi_OneToOne;
 
 import jakarta.persistence.*;
 
-@Entity
+//@Entity
 public class Student {
     @Id
     private int id;

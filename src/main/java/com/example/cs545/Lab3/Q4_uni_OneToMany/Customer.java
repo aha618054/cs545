@@ -12,7 +12,6 @@ public class Customer {
     private String name;
     private String address;
 
-    @OneToMany
-    @JoinColumn(name = "customer_id")
+    @OneToMany(mappedBy = "customer")
     private List<Reservation> reservations = new ArrayList<>();
 }
