@@ -5,8 +5,5 @@ import jakarta.persistence.*;
 @Entity
 @DiscriminatorValue("Book")
 public class Book extends Product {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
     private String title;
 }

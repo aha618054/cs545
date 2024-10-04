@@ -5,10 +5,6 @@ import jakarta.persistence.*;
 @Entity
 @DiscriminatorValue("CD")
 public class CD extends Product {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
     private String artist;
 
 }
