@@ -13,11 +13,11 @@ public class Appointment {
     private Double amount;
 
     @ManyToOne
-    @JoinColumn(name = "patient_id")
+    @JoinColumn(name = "patient")
     private Patient patient;
 
     @ManyToOne
-    @JoinColumn(name = "doctor_id")
+    @JoinColumn(name = "doctor")
     private Doctor doctor;
 }
 
